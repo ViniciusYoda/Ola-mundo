@@ -20,27 +20,11 @@ export default function SobreMim() {
          />
          
          <p className={styles.paragrafo}>
-            lorem
+            Eu gosto de estudar sobre o mundo da programação, principalmente sobre o mundo Front-end.
          </p>
 
          <p className={styles.paragrafo}>
-            lorem
-         </p>
-
-         <p className={styles.paragrafo}>
-            lorem
-         </p>
-
-         <p className={styles.paragrafo}>
-            lorem
-         </p>
-
-         <p className={styles.paragrafo}>
-            lorem
-         </p>
-
-         <p className={styles.paragrafo}>
-            lorem
+            Possuo conhecimentos em Html, Css, JavasCript, Git, Sass e React.
          </p>
 
       </PostModelo>
