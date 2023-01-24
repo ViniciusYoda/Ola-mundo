@@ -6,7 +6,6 @@ export default function PostModelo({ fotoCapa, titulo, children }) {
          <div 
             className={styles.fotoCapa}
             style={{backgroudImage: `url(${fotoCapa})`}}>
-
          </div>
 
          <h2 className={styles.titulo}>
