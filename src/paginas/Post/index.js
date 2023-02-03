@@ -2,11 +2,11 @@ import { Route, Routes, useParams } from "react-router-dom"
 import posts from "json/posts.json";
 import PostModelo from "componentes/PostModelo";
 import ReactMarkdown from "react-markdown";
-import './Post.css'
 import NaoEncontrada from "paginas/NaoEncontrada";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import styles from './Post.module.css'
 import PostCard from "componentes/PostCard";
+import './Post.css'
 
 export default function Post(){
    const parametros = useParams();
@@ -22,11 +22,14 @@ export default function Post(){
    const postsRecomendados = posts
       .filter((post) => post.id !== Number(parametros.id))
       .sort((a, b) => b.id - a.id)
-      .slicec(0, 4);
+      .slice(0, 4);
 
    return(
       <Routes>
-         <Route path="*" element={<PaginaPadrao />}>
+         <Route 
+            path="*" 
+            element={<PaginaPadrao />}
+         >
             <Route index element={
                <PostModelo
                fotoCapa={`/assets/posts/${post.id}/capa.png`}
@@ -45,8 +48,7 @@ export default function Post(){
                      <PostCard post={post} />
                   </li>
                ))}
-            </ul>
-               
+            </ul> 
             </PostModelo>
             }/>
          </Route>
