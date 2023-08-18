@@ -17,7 +17,7 @@ export default function AppRoutes() {
             <Route 
                path="/" 
                element={<PaginaPadrao />}
-            >
+            />
             <Route 
                index 
                element={<Inicio />}
